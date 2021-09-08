@@ -3,6 +3,7 @@
     background-color: var(--main-color);
     border-top: 1px solid purple;
     max-width: 260px;
+    color: white;
 }
 
 
@@ -43,4 +44,10 @@
     font-size: 18px;
     background-color: white;
     border-radius: 999px;
+}
+
+.sidebar > hr {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border: 1px solid orange;
 }
