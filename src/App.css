@@ -1,0 +1,8 @@
+body {
+    --main-color: #2C8EA7;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
