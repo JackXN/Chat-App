@@ -19,6 +19,7 @@ function Sidebar() {
             <CreateIcon/>
           </div>
           <SidebarOption Icon={InsertCommentIcon} title='Threads'/>
+          <SidebarOption title='Gaming'/>
         </div>
     )
 }
