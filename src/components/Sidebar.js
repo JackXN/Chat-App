@@ -1,6 +1,6 @@
 import React from 'react'
 import "../Styles/Sidebar.css";
-import { FiberManualRecord } from '@material-ui/icons';
+import FiberManualRecordIcon from '@material-ui/icons/FiberManualRecord';
 import CreateIcon from '@material-ui/icons/Create';
 
 function Sidebar() {
@@ -8,8 +8,8 @@ function Sidebar() {
         <div className='sidebar'>
           <div className='sidebar_header'>
               <div className='sidebar_info'>
-
-              <h3><FiberManualRecord/>
+        <h2>Coders Club</h2>
+              <h3><FiberManualRecordIcon/>
               Jack Rigan
               </h3>
               </div>
