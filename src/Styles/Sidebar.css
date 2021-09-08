@@ -2,7 +2,7 @@
 .sidebar {
     background-color: var(--main-color);
     border-top: 1px solid purple;
-    max-width: 260px;
+    max-width: 300px;
     color: white;
 }
 
@@ -36,6 +36,7 @@
     margin-top: 1px;
     margin-right: 2px;
     color: green;
+    flex: 0.3;
 }
 
 .sidebar_header > .MuiSvgIcon-root {

@@ -53,7 +53,7 @@ function Sidebar() {
       <hr/>
       <SidebarOption Icon={ExpandMoreIcon} title='Channels'/>
       <hr/>
-      <SidebarOption Icon={AddIcon} title='Add Channel'/>
+      <SidebarOption Icon={AddIcon} title='Add Channel' addChannelOption />
       <hr/>
 
     {/* Connect to db and list all the channels */}

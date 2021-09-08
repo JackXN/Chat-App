@@ -14,7 +14,7 @@ function App() {
 <Sidebar/>
 {/* Switch checks the current route and renders the matching route */}
 <Switch>
-  <Route path='room/:roomId'>
+  <Route path='/room/:roomId'>
     <Chat/>
   </Route>
 </Switch>
