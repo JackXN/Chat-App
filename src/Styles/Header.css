@@ -3,7 +3,7 @@
     align-items: center;
     justify-content: space-between;
     padding: 10px 0;
-    background-color: var(--main-color);
+    background-color: var(--secondary);
     color: white;
 }
 

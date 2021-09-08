@@ -9,7 +9,6 @@ function App() {
 <Header/>
 <div className='app_body'>
 <Sidebar/>
-
 {/* Sidebar */}
 </div>
 {/* React-Router -> Chat Screen */}
