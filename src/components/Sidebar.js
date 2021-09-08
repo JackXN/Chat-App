@@ -3,6 +3,9 @@ import "../Styles/Sidebar.css";
 import FiberManualRecordIcon from '@material-ui/icons/FiberManualRecord';
 import CreateIcon from '@material-ui/icons/Create';
 import SidebarOption from './SidebarOption';
+import InsertCommentIcon from '@material-ui/icons/InsertComment';
+
+
 function Sidebar() {
     return (
         <div className='sidebar'>
@@ -14,13 +17,8 @@ function Sidebar() {
               </h3>
               </div>
             <CreateIcon/>
-            <SidebarOption Icon={} title='Threads'/>
-            <SidebarOption Icon={} title='Threads'/>
-            <SidebarOption Icon={} title='Threads'/>
-            <SidebarOption Icon={} title='Threads'/>
-            
-            
           </div>
+          <SidebarOption Icon={InsertCommentIcon} title='Threads'/>
         </div>
     )
 }
