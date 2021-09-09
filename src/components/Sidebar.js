@@ -13,17 +13,21 @@ import FileCopyIcon from "@material-ui/icons/FileCopy";
 import ExpandLessIcon from "@material-ui/icons/ExpandLess";
 import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
 import AddIcon from '@material-ui/icons/Add';
+import VideogameAssetIcon from '@material-ui/icons/VideogameAsset';
 import db from '../firebase';
+import {useStateValue} from '../StateProvider';
+
 
 function Sidebar() {
 
-    const [channels, setChannels] = useState([]);
+const [channels, setChannels] = useState([]);
+const [{ user } ] = useStateValue();
 
     useEffect(() => {
         db.collection('rooms').onSnapshot(snapshot => (
             setChannels( snapshot.docs.map(doc => ({
                 id: doc.id,
-                name: doc.data().name
+                name: doc.data().name,
             })))
         )) 
     }, []);
@@ -36,13 +40,13 @@ function Sidebar() {
           <h2>Xerus World</h2>
           <h3>
             <FiberManualRecordIcon/>
-            Jack Rigan
+          {user?.displayName}
           </h3>
         </div>
         <CreateIcon/>
       </div>
       <SidebarOption Icon={InsertCommentIcon} title="Threads"/>
-      <SidebarOption title="Gaming"/>
+      <SidebarOption title="Gaming" Icon={VideogameAssetIcon}/>
       <SidebarOption Icon={InboxIcon} title="Mentions & Threads"/>
       <SidebarOption Icon={DraftsIcon} title="Saved Items"/>
       <SidebarOption Icon={BookmarkBorderIcon} title="Channel browser"/>

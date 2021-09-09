@@ -1,5 +1,5 @@
 export const initialState = {
-    user: 'null',
+    user: 'jack',
 }
 
 export const actionTypes = {
@@ -13,7 +13,7 @@ switch(action.type) {
     case actionTypes.SET_USER:
         return {
             ...state,
-            user: action.user
+            user: action.user,
         } 
     default: 
     return state;
