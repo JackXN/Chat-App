@@ -4,6 +4,7 @@ import { Button } from '@material-ui/core';
 import {auth,provider} from '../firebase';
 import {useStateValue} from '../StateProvider';
 import {actionTypes} from '../reducer';
+import Logo from '../Assets/Images/logo-final@2x.png'
 function Login() {
 
 const [state, dispatch] = useStateValue();
@@ -15,7 +16,7 @@ auth
     console.log(result)
 dispatch({
     type: actionTypes.SET_USER,
-    user: result.user
+    user: result.user,
 })
 })
 .catch(error => {
@@ -25,12 +26,12 @@ dispatch({
     return (
         <div className='login'>
             <div className='login_container'>
-            <img src='https://avatars.githubusercontent.com/u/73765650?v=4' alt=''/>
-        <h1>Sign In To Superizee Chat</h1>
-<p>superizee.chat.com</p>
+            <img src={Logo} alt=''/>
+        <h1>INVISIBLE <span>NODE</span></h1>
 <Button onClick={signIn}>Sign In With Google</Button>
-            </div>
-        </div>
+</div>
+ </div>
+
     )
 }
 

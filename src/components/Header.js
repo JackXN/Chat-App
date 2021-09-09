@@ -19,7 +19,7 @@ console.log(user)
         <Avatar
         className='header-avatar'
         src={user?.photoURL}
-        />
+        alt={user?.displayName}/>
         <AccessTime/>
       </div>
       <div className="header_search">

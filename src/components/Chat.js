@@ -61,7 +61,7 @@ Details
     />
 ))}
 </div>
-<ChatInput channelName={roomDetails?.name}/>
+<ChatInput channelName={roomDetails?.name} channelId/>
         </div>
     )
 }
