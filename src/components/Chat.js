@@ -19,14 +19,14 @@ if(roomId) {
     db.collection('rooms')
     .doc(roomId)
     .onSnapshot((snapshot) => setRoomDetails(snapshot.data()))
-
-
-db.collection('rooms').doc(roomId)
+}
+db.collection('rooms')
+.doc(roomId)
 .collection('messages')
 .orderBy('timestamp', 'asc')
-.onSnapshot((snapshot) => setRoomMessages(snapshot.docs.map((doc) => doc.data())))
-
-}
+.onSnapshot((snapshot) =>
+setRoomMessages(snapshot.docs.map((doc) => doc.data()))
+)
 }, [roomId])
 
 
@@ -48,8 +48,16 @@ Details
 </p>
     </div>
 </div>
-<div className='chat_messages'>
 
+<div className='chat_messages'>
+{roomMessages.map(({message,timestamp,user,userImage}) => (
+    <Message
+    message={message}
+    timestamp={timestamp}
+    user={user}
+    userImage={userImage}
+    />
+))}
 </div>
         </div>
     )
