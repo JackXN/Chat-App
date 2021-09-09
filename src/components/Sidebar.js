@@ -37,7 +37,7 @@ const [{ user } ] = useStateValue();
     <div className="sidebar">
       <div className="sidebar_header">
         <div className="sidebar_info">
-          <h2>Xerus World</h2>
+          <h2>Test</h2>
           <h3>
             <FiberManualRecordIcon/>
           {user?.displayName}
@@ -62,7 +62,7 @@ const [{ user } ] = useStateValue();
 
     {/* Connect to db and list all the channels */}
 {channels.map((channel) => (
-    <SidebarOption title={channel.name} id={channel.id}/>
+    <SidebarOption title={channel.name} id={channel.id} key={channel.id}/>
 ))}
     </div>
   );

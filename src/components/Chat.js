@@ -9,12 +9,10 @@ import ChatInput from './ChatInput';
 
 
 
-function Chat() {
+function Chat({id}) {
 const {roomId} = useParams();
 const [roomDetails, setRoomDetails] = useState(null);
 const [roomMessages, setRoomMessages] = useState([]);
-
-
 
 useEffect(() => {
 if(roomId) {
@@ -30,6 +28,8 @@ db.collection('rooms')
 setRoomMessages(snapshot.docs.map((doc) => doc.data()))
 )
 }, [roomId])
+// console.log(roomDetails)
+// console.log(roomMessages)
 
 
 
@@ -43,17 +43,15 @@ setRoomMessages(snapshot.docs.map((doc) => doc.data()))
     <StarBorderOutlinedIcon/>
 </h4>
     </div>
+
     <div className='chat_header_right'>
-<p>
-<InfoIcon/>
-Details
-</p>
+<p><InfoIcon/> Details </p>
     </div>
 </div>
-
 <div className='chat_messages'>
 {roomMessages.map(({message,timestamp,user,userImage}) => (
     <Message
+    key={timestamp}
     message={message}
     timestamp={timestamp}
     user={user}
@@ -61,7 +59,7 @@ Details
     />
 ))}
 </div>
-<ChatInput channelName={roomDetails?.name} channelId/>
+<ChatInput channelName={roomDetails?.name} channelId={roomId} />
         </div>
     )
 }

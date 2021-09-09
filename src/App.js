@@ -18,7 +18,7 @@ const [{user}, dispatch] = useStateValue();
     <div className="App">
       <Router>
         {!user ? (
-          <Login/>
+         <Login/>
         ): (
 <>
 <Header/>
