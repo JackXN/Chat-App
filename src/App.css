@@ -1,6 +1,6 @@
 body {
-    --main-color: #2C8EA7;
-    --secondary: #4D4E5A
+    --main-color:#40C5E7;
+    --secondary:#37394D ;
 }
 
 * {
@@ -10,4 +10,8 @@ body {
 
 .app_body {
     display:flex;
+}
+
+.app_wrapper {
+    padding: 20px;
 }

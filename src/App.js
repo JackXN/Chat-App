@@ -20,7 +20,8 @@ const [{user}, dispatch] = useStateValue();
         {!user ? (
          <Login/>
         ): (
-<>
+
+<div className='app_wrapper'>
 <Header/>
 <div className='app_body'>
 <Sidebar/>
@@ -31,7 +32,7 @@ const [{user}, dispatch] = useStateValue();
   </Route>
 </Switch>
 </div>
-</>
+</div>
         )}
 </Router>
    </div>

@@ -19,6 +19,7 @@ auth
         type: actionTypes.SET_USER,
         user: result.user
     })
+    
 })
 .catch((error) => {
     alert(error.message)

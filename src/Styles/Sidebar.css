@@ -1,9 +1,11 @@
 
 .sidebar {
-    background-color: var(--main-color);
-    border-top: 1px solid purple;
-    max-width: 300px;
+    background-color: var(--secondary);
+    width: 300px;
     color: white;
+    margin-top: 20px;
+    border-radius: 20px;
+    padding: 10px;
 }
 
 

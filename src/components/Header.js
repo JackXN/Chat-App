@@ -5,7 +5,7 @@ import { AccessTime } from "@material-ui/icons";
 import { Search } from "@material-ui/icons";
 import { HelpOutline } from "@material-ui/icons";
 import {useStateValue} from '../StateProvider';
-
+import Logo from '../Assets/Images/logo-final@2x.png'
 
 
 function Header() {
@@ -20,12 +20,10 @@ function Header() {
         className='header-avatar'
         src={user?.photoURL}
         alt={user?.displayName}/>
-        <AccessTime/>
+<img src={Logo} alt='InvisibleNode'/>
+<h2>Invisible <span>Node</span></h2>
       </div>
-      <div className="header_search">
-        <Search/>
-        <input placeholder='Search Jack Rigan'/>
-      </div>
+    
       <div className="header_right">
          <HelpOutline/>
       </div>
