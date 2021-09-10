@@ -16,14 +16,9 @@ function Header() {
   return (
     <div className="header">
       <div className="header_left">
-        <Avatar
-        className='header-avatar'
-        src={user?.photoURL}
-        alt={user?.displayName}/>
 <img src={Logo} alt='InvisibleNode'/>
 <h2>Invisible <span>Node</span></h2>
       </div>
-    
       <div className="header_right">
          <HelpOutline/>
       </div>

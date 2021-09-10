@@ -1,6 +1,7 @@
 .chat_input {
     border-radius: 20px;
-
+    background-color: var(--secondary);
+    margin-bottom: 30px;
 }
 
 .chat_input > form {
@@ -13,9 +14,11 @@
     position: fixed;
     bottom: 30px;
     width: 60%;
-    border: 1px solid gray;
-    border-radius: 3px;
+    border-radius: 20px;
     padding: 20px;
+    border-bottom: 1px solid white;
+    outline: none;
+    background-color: var(--secondary);
 }
 
 .chat_input > form > button {

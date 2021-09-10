@@ -44,17 +44,13 @@ const [{ user } ] = useStateValue();
           </h3>
         </div>
       </div>
-      <SidebarOption Icon={InsertCommentIcon} title="Threads"/>
+      <SidebarOption Icon={InsertCommentIcon} title="General"/>
       <SidebarOption title="Gaming" Icon={VideogameAssetIcon}/>
-      <SidebarOption Icon={InboxIcon} title="Mentions & Threads"/>
-      <SidebarOption Icon={DraftsIcon} title="Saved Items"/>
-      <SidebarOption Icon={BookmarkBorderIcon} title="Channel browser"/>
-      <SidebarOption Icon={PeopleAltIcon} title="People & user groups"/>
-      <SidebarOption Icon={AppsIcon} title="Apps"/>
-      <SidebarOption Icon={FileCopyIcon} title="File Browser"/>
-      <SidebarOption Icon={ExpandLessIcon} title='Show less'/>
-      <hr/>
-      <SidebarOption Icon={ExpandMoreIcon} title='Channels'/>
+      <SidebarOption Icon={InboxIcon} title="Dev Resources"/>
+      <SidebarOption Icon={DraftsIcon} title="Design Resources"/>
+      <SidebarOption Icon={BookmarkBorderIcon} title="Music"/>
+      <SidebarOption Icon={PeopleAltIcon} title="Gifs"/>
+      <SidebarOption Icon={AppsIcon} title="Social Media"/>
       <hr/>
       <SidebarOption Icon={AddIcon} title='Add Channel' addChannelOption />
       <hr/>
