@@ -38,7 +38,8 @@ const [{ user } ] = useStateValue();
       <div className="sidebar_header">
         <div className="sidebar_info">
           <h3>
-            <FiberManualRecordIcon/>
+            <FiberManualRecordIcon className='green-icon'/>
+            
           {user?.displayName}
           </h3>
         </div>

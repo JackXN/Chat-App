@@ -15,7 +15,8 @@
     align-items: center;
     justify-content: space-between;
     padding: 20px;
-    border-bottom: 1px solid lightgray;
+    border-bottom: 1px solid var(--secondary);
+    color: white;
 }
 
 .chat_header_right > p {
@@ -37,4 +38,10 @@
 .chat_channelName > .MuiSvgIcon-root {
     margin-left: 10px;
     font-size: 18px;
+}
+
+.chat_messages {
+    color: white;
+    font-size: 20px;
+    margin-left: 10px;
 }

@@ -39,13 +39,8 @@ setRoomMessages(snapshot.docs.map((doc) => doc.data()))
 <div className='chat_header'>
     <div className='chat_header_left'>
 <h4 className='chat_channelName'>
-    <strong>#{roomDetails?.name}</strong>
-    <StarBorderOutlinedIcon/>
+    <strong># {roomDetails?.name}</strong>
 </h4>
-    </div>
-
-    <div className='chat_header_right'>
-<p><InfoIcon/> Details </p>
     </div>
 </div>
 <div className='chat_messages'>
