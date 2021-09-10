@@ -29,7 +29,23 @@ auth
         <div className='login'>
             <div className='login_container'>
             <img src={Logo} alt=''/>
-        <h1>INVISIBLE <span>NODE</span></h1>
+        <h1>communiti</h1>
+<form className='form_form'> 
+<hr/>
+<label htmlFor='email'>
+    Email Address: 
+<input className='login_input' placeholder= 'demo@gmail.com' type='text' />
+</label>
+<hr/>
+<label htmlFor='password'>
+ Password: 
+<input className='login_input' type='password' placeHolder='*********'/>
+</label>
+<hr/>
+</form>
+
+  
+
 <Button onClick={signIn}>Sign In With Google</Button>
 </div>
  </div>
