@@ -1,11 +1,12 @@
 
 .sidebar {
-    background-color: var(--secondary);
+    background-color: rgba(70,74,91, 0.8);
     width: 300px;
     color: white;
     margin-top: 20px;
     border-radius: 20px;
     padding: 10px;
+    box-shadow: 5px 5px 5px black;
 }
 
 
@@ -13,7 +14,6 @@
    display: flex;
    padding-bottom: 10px;
    padding: 13px;
-   border-bottom: 2px orange solid;
 }
 
 .sidebar_info {
@@ -52,5 +52,5 @@
 .sidebar > hr {
     margin-top: 10px;
     margin-bottom: 10px;
-    border: 1px solid orange;
+    boder: solid 1px var(--secondary);
 }

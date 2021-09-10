@@ -3,6 +3,11 @@
     flex-grow: 1;
     overflow-y:scroll ;
     padding-bottom: 150px;
+    background-color: rgba(70,74,91, 0.8);
+    margin-left: 20px;
+    margin-top: 20px;
+    border-radius: 20px;
+    box-shadow: 10px 5px 5px black;
 }
 
 .chat_header {

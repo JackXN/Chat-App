@@ -1,6 +1,7 @@
 body {
     --main-color:#40C5E7;
     --secondary:#37394D ;
+    background-color: var(--secondary);
 }
 
 * {
@@ -14,4 +15,7 @@ body {
 
 .app_wrapper {
     padding: 20px;
+    font-family: 'Teko',sans-serif;
+    background-color: var(--secondary);
 }
+

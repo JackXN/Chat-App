@@ -37,13 +37,11 @@ const [{ user } ] = useStateValue();
     <div className="sidebar">
       <div className="sidebar_header">
         <div className="sidebar_info">
-          <h2>Test</h2>
           <h3>
             <FiberManualRecordIcon/>
           {user?.displayName}
           </h3>
         </div>
-        <CreateIcon/>
       </div>
       <SidebarOption Icon={InsertCommentIcon} title="Threads"/>
       <SidebarOption title="Gaming" Icon={VideogameAssetIcon}/>
