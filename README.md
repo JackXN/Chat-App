@@ -1,17 +1,16 @@
-# Invisible Node
-## Restaurant Reservation System
+# communiti
+## A live messaging app
 
-> Link to live app: https://periodic-tables-frontend-g5bb766k5-keithfrazier98.vercel.app/
-
+> Link to live app: https://chatapp-d95b6.web.app
 ### Overview
 
-**Periodic Tables** is designed to help restaurants manage reservations and tables and keep track of customer data on an easy-to-use platform. Users can create and edit reservations, create tables, assign reservations to tables, and search for reservations by a customer's phone number. This basic functionality alleviates a restaurant's need to keep paper documentation of reservations and table availability, by automating these processes. This ensures better management of reservations and keeps a digital record of all information so nothing is lost or forgotten.  
+**Periodic Tables** was designed to be used as a simple chat application where users can login using google authentication. Once logged in the user has the ability to join pre-defined chat channels or create their own and start messaging with friends!
 
 ### API Docs
 
 ### /Dashboard (/)
 The main url will always redirect to the dahsboard which will default to displaying the tables and the current date's as reservations. 
-![dashboard](./app-screenshots/Dashboard.png)
+![dashboard](./src/Screenshots/communiti-banner.png)
 
 <hr>
 
