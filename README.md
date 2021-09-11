@@ -1,3 +1,4 @@
+![banner](./src/Screenshots/communiti-banner.png)
 # communiti
 ## A live messaging app
 
@@ -10,7 +11,7 @@
 
 ### /Dashboard (/)
 The main url will always redirect to the dahsboard which will default to displaying the tables and the current date's as reservations. 
-![dashboard](./src/Screenshots/communiti-banner.png)
+
 
 <hr>
 
