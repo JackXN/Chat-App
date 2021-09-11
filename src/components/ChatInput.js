@@ -5,9 +5,6 @@ import db from '../firebase';
 import firebase from 'firebase';
 import {useStateValue} from '../StateProvider';
 
-
-
-
 function ChatInput({channelName, channelId}) {
 const [input, setInput] = useState('');
 const [ {user} ] = useStateValue();
@@ -34,6 +31,8 @@ setInput('')
   onChange={(e) => setInput(e.target.value)}
   value={input}
   />
+
+  
   <Button type='submit' onClick={sendMessage}>Send </Button>
             </form>
         </div>

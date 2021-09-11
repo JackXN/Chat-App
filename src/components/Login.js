@@ -5,6 +5,7 @@ import {auth,provider} from '../firebase';
 import {useStateValue} from '../StateProvider';
 import {actionTypes} from '../reducer';
 import Logo from '../Assets/Images/logo-final@2x.png'
+import GitHubIcon from '@material-ui/icons/GitHub';
 
 function Login() {
 
@@ -26,6 +27,15 @@ auth
 })
 }
     return (
+        <>
+        <div className='login_buttons'>
+        <div clasName='login_buttons_left'>
+<GitHubIcon className='github'/>
+            </div>
+            <div className='login_buttons_right'>
+        <Button className='sign_up'>Sign Up</Button>
+        </div>
+    </div>
         <div className='login'>
             <div className='login_container'>
             <img src={Logo} alt=''/>
@@ -43,12 +53,14 @@ auth
 </label>
 <hr/>
 </form>
-
-  
-
 <Button onClick={signIn}>Sign In With Google</Button>
+<footer>
+    <h3>Copyright @2021 communiti. All Rights Reserved.</h3>
+</footer>
 </div>
+
  </div>
+ </>
 
     )
 }
