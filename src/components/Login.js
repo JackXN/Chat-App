@@ -30,7 +30,7 @@ auth
         <>
         <div className='login_buttons'>
         <div clasName='login_buttons_left'>
-<GitHubIcon className='github'/>
+<a href='https://github.com/JackXN/Invisible-Node' target='_blank' rel="noreferrer"><GitHubIcon className='github'/></a>
             </div>
             <div className='login_buttons_right'>
         <Button className='sign_up'>Sign Up</Button>
