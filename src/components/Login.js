@@ -38,7 +38,7 @@ auth
     </div>
         <div className='login'>
             <div className='login_container'>
-            <img src={Logo} alt=''/>
+            <img src={Logo} alt='communiti logo' class='communiti'/>
         <h1>communiti</h1>
 <form className='form_form'> 
 <hr/>
@@ -53,7 +53,7 @@ auth
 </label>
 <hr/>
 </form>
-<Button onClick={signIn}>Sign In With Google</Button>
+<Button onClick={signIn} className='google_button'>Sign In With Google</Button>
 <footer>
     <h3>Copyright @2021 communiti. All Rights Reserved.</h3>
 </footer>

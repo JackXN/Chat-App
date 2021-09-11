@@ -29,12 +29,11 @@ color: white;
     
 }
 
-.login_container > h1 > span {
-    color: #40C5E7;
-}
 
 .login_container > h1 {
     color: white;
+    position: relative;
+    bottom: 20px;
 }
 
 .login_container {
@@ -69,7 +68,7 @@ color: white;
 
 .sign_up {
     margin-top: 10px !important;
-    margin-right: 15px !important;
+    margin-right: 30px !important;
     color: #707070 !important;
     cursor: pointer;
     border: solid #707070 1px !important;
@@ -169,4 +168,16 @@ input:-webkit-autofill:active  {
 
 input {
     color: white;
+}
+
+.google_button {
+    border: solid #707070 1px !important;
+    transition: all 500ms !important;
+    padding: 10px !important;
+    color: #707070 !important;
+}
+
+.google_button:hover {
+    color: white !important;
+    border: solid white 1px !important;
 }
