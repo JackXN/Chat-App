@@ -71,6 +71,9 @@ color: white;
     margin-right: 30px !important;
     color: #707070 !important;
     cursor: pointer;
+    border-radius: 10px !important;
+    padding-right: 10px !important;
+    padding-left: 10px !important;
     border: solid #707070 1px !important;
     transition: all 500ms !important;
 }
@@ -173,8 +176,9 @@ input {
 .google_button {
     border: solid #707070 1px !important;
     transition: all 500ms !important;
-    padding: 10px !important;
     color: #707070 !important;
+    padding-right: 10px !important;
+    padding-left: 10px !important;
 }
 
 .google_button:hover {
