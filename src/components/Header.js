@@ -16,8 +16,8 @@ function Header() {
   return (
     <div className="header">
       <div className="header_left">
-<img src={Logo} alt='InvisibleNode'/>
-<h2>Invisible <span>Node</span></h2>
+<img src={Logo} alt='communiti'/>
+<h2>communiti <span>live chat</span></h2>
       </div>
       <div className="header_right">
          <HelpOutline/>
