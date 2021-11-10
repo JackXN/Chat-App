@@ -19,7 +19,6 @@ import {useStateValue} from '../StateProvider';
 
 
 function Sidebar() {
-
 const [channels, setChannels] = useState([]);
 const [{ user } ] = useStateValue();
 
@@ -30,7 +29,7 @@ const [{ user } ] = useStateValue();
                 name: doc.data().name,
             })))
         )) 
-    }, []);
+    }, [])
 
 
   return (
